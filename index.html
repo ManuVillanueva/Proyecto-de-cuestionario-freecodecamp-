@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--El titulo para el browser y enlace a css-->
+    <title>Survey form of your computer components</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--Acá comienza el codigo del cuerpo de la pagina-->
+    <!--Primero el titulo-->
+    <h1 id="tittle">Survey form of your computer components</h1>
+    <!--Y una descripción-->
+    <p id="description">Complete this survey to find out what computer do students at freecodecamp</p>
+    <!--Creo el elemento form para empezar el codigo del formulario-->
+    <form id="survey-form">
+      <label id="name-label">
+        <input id="name" type="text" placeholder="Enter your name" required>
+      </label>
+      <label id="email">
+        <input id="email" type="email" placeholder="Enter your Email" required>
+      </label>
+      <label id="number">
+        <input id="number" type="number" min="13" max="99" placeholder="Enter your age">
+      </label>
+      <!--Ahora pongo el elemento select para crear algunas opciones despleglables-->
+      <select id="dropdown">
+        <option disabled="" selected="" value="">Select your type of computer</option>
+        <option value="desktop-pc">Desktop PC</option>
+        <option value="laptop">Laptop</option>
+        <option value="mac">Mac</option>
+        <option value="other">Other</option>
+      </select>
+      <!--Ahora unas etiqutas de tipo radio-->
+      <p>What type of operating system do you use for programming?</p>
+      <label for="windows">
+        <input id="windows" type="radio" name="operating-system">Windows
+      </label>
+      <label for="macos">
+        <input id="macos" type="radio" name="operating-system">MacOS
+      </label>
+      <label for="linux-distribution">
+        <input id="linux-distribution" type="radio" name="operating-system">Linux Distribution
+      </label>
+      <!--Unos checkbox para pedir un poco mas de info al usuario-->
+      <p>Select your computer components</p>
+      <label>
+        <input value="memory-ram-4" type="checkbox">Memory ram 4gb
+      </label>
+      <label>
+        <input value="memory-ram-8" type="checkbox">Memory ram 8gb
+      </label>
+      <label>
+        <input value="memory-ram-16" type="checkbox">Memory ram 16gb
+      </label>
+      <label>
+        <input value="ssd" type="checkbox">SSD
+      </label>
+      <label>
+        <input value="hdd" type="checkbox">HDD
+      </label>
+      <label>
+        <input value="m2" type="checkbox">M.2
+      </label>
+      <label>
+        <input value="processor-2" type="checkbox">Processor of 2 cores
+      </label>
+      <label>
+        <input value="processor-4" type="checkbox">Processor of 4 cores
+      </label>
+      <label>
+        <input value="processor-6" type="checkbox">Processor of 6 cores
+      </label>
+      <label>
+        <input value="processor-8" type="checkbox">Processor of 8 cores
+      </label>
+      <label>
+        <input value="processor-10" type="checkbox">Processor of 10 cores
+      </label>
+    </form>
+  </body>
+</html>
