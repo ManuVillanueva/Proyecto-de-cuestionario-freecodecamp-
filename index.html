@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--El titulo para el browser y enlace a css-->
-    <title>Survey form of your computer components</title>
+    <title> Survey form of your computer components</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!--Acá comienza el codigo del cuerpo de la pagina-->
     <!--Primero el titulo-->
-    <h1 id="tittle">Survey form of your computer components</h1>
+    <h1 id="title">Survey form of your computer components</h1>
     <!--Y una descripción-->
     <p id="description">Complete this survey to find out what computer do students at freecodecamp</p>
     <!--Creo el elemento form para empezar el codigo del formulario-->
@@ -18,11 +18,11 @@
       <label id="name-label">
         <input id="name" type="text" placeholder="Enter your name" required>
       </label>
-      <label id="email">
+      <label id="email-label">
         <input id="email" type="email" placeholder="Enter your Email" required>
       </label>
-      <label id="number">
-        <input id="number" type="number" min="13" max="99" placeholder="Enter your age">
+      <label id="number-label">
+        <input id="number" type="number" min="10" max="99" placeholder="Your age">
       </label>
       <!--Ahora pongo el elemento select para crear algunas opciones despleglables-->
       <select id="dropdown">
@@ -35,13 +35,13 @@
       <!--Ahora unas etiqutas de tipo radio-->
       <p>What type of operating system do you use for programming?</p>
       <label for="windows">
-        <input id="windows" type="radio" name="operating-system">Windows
+        <input id="windows" value="windows" type="radio" name="operating-system">Windows
       </label>
       <label for="macos">
-        <input id="macos" type="radio" name="operating-system">MacOS
+        <input id="macos" value="macos" type="radio" name="operating-system">MacOS
       </label>
       <label for="linux-distribution">
-        <input id="linux-distribution" type="radio" name="operating-system">Linux Distribution
+        <input id="linux-distribution" value="linux-distribution" type="radio" name="operating-system">Linux Distribution
       </label>
       <!--Unos checkbox para pedir un poco mas de info al usuario-->
       <p>Select your computer components</p>
@@ -78,6 +78,9 @@
       <label>
         <input value="processor-10" type="checkbox">Processor of 10 cores
       </label>
+      <!--Pongo un textarea para que el usuario pueda agregar mas datos relacionados-->
+      <textarea></textarea>
+      <button id="submit" type="submit">Submit</button>
     </form>
   </body>
 </html>
